@@ -1,5 +1,6 @@
 package sample.Model;
 
+
 public class Board {
 
 
@@ -12,7 +13,7 @@ public class Board {
 
     }
 
-    private void makeBoard(){
+    public void makeBoard(){
 
         this.board = new Square[this.size][this.size];
 
@@ -20,9 +21,17 @@ public class Board {
             for(int y = 0; y < this.size; y++){
 
                     if(y == 1){
-                        updateSquare(new Pawn(x,y,this, -1));
+
+                        Pawn pawn = new Pawn(x,y,this, 1);
+
+                        updateSquare(pawn);
+
                     }else if(y == 6){
-                        updateSquare(new Pawn(x,y, this, 1));
+
+                        Pawn pawn = new Pawn(x,y, this, -1);
+
+                        updateSquare(pawn);
+
                     }else{
                         updateSquare(new EmptySquare(x,y,0));
                     }
@@ -30,15 +39,46 @@ public class Board {
         }
     }
 
-    private void updateSquare(Square square){
 
-        board[square.getY()][square.getY()] = square;
+    public void initalizePossibleMoves(){
+
+        for(int i = 0; i < size; i++){
+            for(int j = 0; j < size; j++){
+                board[i][j].calculateMoves();
+            }
+        }
+
+
+    }
+
+
+
+    public void displayBoard(){
+        for(int y = 0; y < this.size; y++){
+            for(int x = 0; x < this.size; x++){
+
+                board[x][y].displaySquare();
+
+            }
+
+            System.out.println();
+        }
+    }
+
+
+
+
+    public void updateSquare(Square square){
+
+
+
+        board[square.getX()][square.getY()] = square;
 
     }
 
 
     public Square getSquare(int x, int y){
-        return this.board[y][x];
+        return this.board[x][y];
     }
 
 

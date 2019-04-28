@@ -15,5 +15,9 @@ public class EmptySquare extends Square {
     public void calculateMoves(){
     }
 
+    public void displaySquare(){
+        System.out.print('e');
+    }
+
 
 }
