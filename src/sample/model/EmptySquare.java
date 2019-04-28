@@ -1,6 +1,4 @@
-package sample.Model;
-
-import sample.Model.Square;
+package sample.model;
 
 public class EmptySquare extends Square {
 

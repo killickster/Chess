@@ -1,4 +1,4 @@
-package sample.Model;
+package sample.model;
 
 
 enum Color {

@@ -1,6 +1,4 @@
-package sample.Model;
-
-import java.util.ArrayList;
+package sample.model;
 
 public class Pawn extends Square {
 
@@ -64,7 +62,7 @@ public class Pawn extends Square {
         this.setY(move.y);
 
         this.board.updateSquare(this);
-        this.board.updateSquare(new EmptySquare(previousPositionX, previousPositionY, 0, this.getColor()));
+        this.board.updateSquare(new EmptySquare(previousPositionX, previousPositionY, 0));
 
     }
 

@@ -1,6 +1,4 @@
-package sample.Model;
-
-import sample.Model.Move;
+package sample.model;
 
 import java.util.ArrayList;
 
