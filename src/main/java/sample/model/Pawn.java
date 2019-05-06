@@ -6,6 +6,8 @@ public class Pawn extends Square {
 
     private Board board;
     private int directionalIncrement;
+    private int previousPositionX;
+    private int previousPositionY;
 
 
     public Pawn(int x, int y, Board board, int directionalIncrement){
@@ -55,19 +57,22 @@ public class Pawn extends Square {
         }
     }
 
-    public void performMove(Move move){
+    public boolean performMove(Move move){
 
         if(ableToMove(move)) {
 
-            int previousPositionX = this.getX();
-            int previousPositionY = this.getY();
+            this.previousPositionX = this.getX();
+            this.previousPositionY = this.getY();
 
             this.setX(move.x);
             this.setY(move.y);
 
             this.board.updateSquare(this);
-            this.board.updateSquare(new EmptySquare(previousPositionX, previousPositionY, 0));
+            this.board.updateSquare(new EmptySquare(this.previousPositionX, this.previousPositionY, 0));
+
+            return true;
         }
+        return false;
     }
 
     public boolean ableToMove(Move move){
@@ -117,5 +122,11 @@ public class Pawn extends Square {
 
     }
 
+    public int getPreviousPositionX() {
+        return previousPositionX;
+    }
 
+    public int getPreviousPositionY(){
+        return previousPositionY;
+    }
 }

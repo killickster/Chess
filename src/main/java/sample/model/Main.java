@@ -48,17 +48,21 @@ public class Main extends Application{
         return board;
     }
 
-    public static void performMove(int xOrigin, int yOrigin, int xConclusion, int yConclusion){
+    public static boolean performMove(int xOrigin, int yOrigin, int xConclusion, int yConclusion){
 
+        boolean returnValue = false;
         try {
 
             Pawn pawn = ((Pawn) (board.getSquare(xOrigin, yOrigin)));
-            pawn.performMove(new Move(xConclusion, yConclusion));
+            returnValue = pawn.performMove(new Move(xConclusion, yConclusion));
+
         }catch (Exception e){
             System.out.println("Unable to perform moves");
         }
 
             board.initalizePossibleMoves();
             board.displayBoard();
+
+            return returnValue;
     }
 }
