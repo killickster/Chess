@@ -1,0 +1,7 @@
+.black {
+    -fx-background-color: #0000000;
+}
+
+.white {
+    -fx-background-color: lineargradient(#F8F8FF, #F8F8FF);
+}

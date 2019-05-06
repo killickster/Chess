@@ -1,0 +1,9 @@
+sample/model/Board.class
+sample/model/EmptySquare.class
+sample/model/Move.class
+sample/model/Color.class
+sample/model/MainLauncher.class
+sample/model/Main.class
+sample/model/Pawn.class
+sample/controller/Controller.class
+sample/model/Square.class

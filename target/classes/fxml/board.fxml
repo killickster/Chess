@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<Pane fx:id="board" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640" prefWidth="640" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.Controller">
+   <children>
+       <Button fx:id="button0" onAction="#square" layoutX="0" layoutY="0" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="light"/>
+       <Button fx:id="button1" onAction="#square" layoutX="0" layoutY="80" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="brown"/>
+       <Button fx:id="button2" onAction="#square" layoutX="0" layoutY="160" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="light"/>
+       <Button fx:id="button3" onAction="#square" layoutX="0" layoutY="240" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="brown"/>
+       <Button fx:id="button4" onAction="#square" layoutX="0" layoutY="320" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="light"/>
+       <Button fx:id="button5" onAction="#square" layoutX="0" layoutY="400" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="brown"/>
+       <Button fx:id="button6" onAction="#square" layoutX="0" layoutY="480" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="light"/>
+       <Button fx:id="button7" onAction="#square" layoutX="0" layoutY="560" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="brown"/>
+       <Button fx:id="button8" onAction="#square" layoutX="80" layoutY="0" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="brown"/>
+       <Button fx:id="button9" onAction="#square"  layoutX="80" layoutY="80" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="light"/>
+       <Button fx:id="button10" onAction="#square" layoutX="80" layoutY="160" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="brown"/>
+       <Button fx:id="button11" onAction="#square"  layoutX="80" layoutY="240" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="light"/>
+       <Button fx:id="button12" onAction="#square" layoutX="80" layoutY="320" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="brown"/>
+       <Button fx:id="button13" onAction="#square"  layoutX="80" layoutY="400" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="light"/>
+       <Button fx:id="button14" onAction="#square" layoutX="80" layoutY="480" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="brown"/>
+       <Button fx:id="button15" onAction="#square"  layoutX="80" layoutY="560" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="light"/>
+       <Button fx:id="button16" onAction="#square" layoutX="160" layoutY="0" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="light"/>
+       <Button fx:id="button17" onAction="#square" layoutX="160" layoutY="80" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="brown"/>
+       <Button fx:id="button18" onAction="#square" layoutX="160" layoutY="160" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="light"/>
+       <Button fx:id="button19" onAction="#square" layoutX="160" layoutY="240" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="brown"/>
+       <Button fx:id="button20" onAction="#square" layoutX="160" layoutY="320" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="light"/>
+       <Button fx:id="button21" onAction="#square" layoutX="160" layoutY="400" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="brown"/>
+       <Button fx:id="button22" onAction="#square" layoutX="160" layoutY="480" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="light"/>
+       <Button fx:id="button23" onAction="#square" layoutX="160" layoutY="560" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="brown"/>
+       <Button fx:id="button24" onAction="#square" layoutX="240" layoutY="0" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="brown"/>
+       <Button fx:id="button25" onAction="#square"  layoutX="240" layoutY="80" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="light"/>
+       <Button fx:id="button26" onAction="#square" layoutX="240" layoutY="160" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="brown"/>
+       <Button fx:id="button27" onAction="#square"  layoutX="240" layoutY="240" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="light"/>
+       <Button fx:id="button28" onAction="#square" layoutX="240" layoutY="320" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="brown"/>
+       <Button fx:id="button29" onAction="#square"  layoutX="240" layoutY="400" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="light"/>
+       <Button fx:id="button30" onAction="#square" layoutX="240" layoutY="480" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="brown"/>
+       <Button fx:id="button31" onAction="#square"  layoutX="240" layoutY="560" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="light"/>
+       <Button fx:id="button32" onAction="#square" layoutX="320" layoutY="0" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="light"/>
+       <Button fx:id="button33" onAction="#square" layoutX="320" layoutY="80" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="brown"/>
+       <Button fx:id="button34" onAction="#square" layoutX="320" layoutY="160" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="light"/>
+       <Button fx:id="button35" onAction="#square" layoutX="320" layoutY="240" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="brown"/>
+       <Button fx:id="button36" onAction="#square" layoutX="320" layoutY="320" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="light"/>
+       <Button fx:id="button37" onAction="#square" layoutX="320" layoutY="400" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="brown"/>
+       <Button fx:id="button38" onAction="#square" layoutX="320" layoutY="480" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="light"/>
+       <Button fx:id="button39" onAction="#square" layoutX="320" layoutY="560" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="brown"/>
+       <Button fx:id="button40" onAction="#square" layoutX="400" layoutY="0" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="brown"/>
+       <Button fx:id="button41" onAction="#square"  layoutX="400" layoutY="80" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="light"/>
+       <Button fx:id="button42" onAction="#square" layoutX="400" layoutY="160" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="brown"/>
+       <Button fx:id="button43" onAction="#square"  layoutX="400" layoutY="240" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="light"/>
+       <Button fx:id="button44" onAction="#square" layoutX="400" layoutY="320" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="brown"/>
+       <Button fx:id="button45" onAction="#square"  layoutX="400" layoutY="400" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="light"/>
+       <Button fx:id="button46" onAction="#square" layoutX="400" layoutY="480" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="brown"/>
+       <Button fx:id="button47" onAction="#square"  layoutX="400" layoutY="560" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="light"/>
+       <Button fx:id="button48" onAction="#square" layoutX="480" layoutY="0" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="light"/>
+       <Button fx:id="button49" onAction="#square" layoutX="480" layoutY="80" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="brown"/>
+       <Button fx:id="button50" onAction="#square" layoutX="480" layoutY="160" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="light"/>
+       <Button fx:id="button51" onAction="#square" layoutX="480" layoutY="240" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="brown"/>
+       <Button fx:id="button52" onAction="#square" layoutX="480" layoutY="320" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="light"/>
+       <Button fx:id="button53" onAction="#square" layoutX="480" layoutY="400" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="brown"/>
+       <Button fx:id="button54" onAction="#square" layoutX="480" layoutY="480" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="light"/>
+       <Button fx:id="button55" onAction="#square" layoutX="480" layoutY="560" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="brown"/>
+       <Button fx:id="button56" onAction="#square" layoutX="560" layoutY="0" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="brown"/>
+       <Button fx:id="button57" onAction="#square"  layoutX="560" layoutY="80" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="light"/>
+       <Button fx:id="button58" onAction="#square" layoutX="560" layoutY="160" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="brown"/>
+       <Button fx:id="button59" onAction="#square"  layoutX="560" layoutY="240" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="light"/>
+       <Button fx:id="button60" onAction="#square" layoutX="560" layoutY="320" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="brown"/>
+       <Button fx:id="button61" onAction="#square"  layoutX="560" layoutY="400" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="light"/>
+       <Button fx:id="button62" onAction="#square" layoutX="560" layoutY="480" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="brown"/>
+       <Button fx:id="button63" onAction="#square"  layoutX="560" layoutY="560" prefHeight="80" prefWidth="80" mnemonicParsing="false" styleClass="light"/>
+   </children>
+</Pane>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640" prefWidth="640" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:id="pane" stylesheets="squares.css">
+   <children>
+   <Button layoutX="0" layoutY="0" mnemonicParsing="false" prefHeight="80" prefWidth="80" styleClass="black" stylesheets="squares.css"/>
+      <Button layoutX="80" layoutY="0" mnemonicParsing="false" prefHeight="80" prefWidth="80"/>
+   </children>
+</Pane>
